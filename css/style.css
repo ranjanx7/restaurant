@@ -1,6 +1,7 @@
-/* ==============================
+
+/* ==================================================
    CSS VARIABLES
-================================= */
+================================================== */
 
 :root {
     --color-primary: #b85c38;
@@ -16,9 +17,9 @@
 }
 
 
-/* ==============================
+/* ==================================================
    BASIC RESET
-================================= */
+================================================== */
 
 * {
     margin: 0;
@@ -26,100 +27,195 @@
     box-sizing: border-box;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     font-family: var(--font-main);
+
     color: var(--color-dark);
     background-color: var(--color-light);
 }
 
 
-/* ==============================
+/* ==================================================
    COMMON CONTAINER
-================================= */
+================================================== */
 
 .container {
     width: min(90%, var(--container-width));
     margin: 0 auto;
 }
 
+section {
+    scroll-margin-top: 30px;
+}
 
-/* ==============================
+/* ==================================================
    HEADER
-================================= */
+================================================== */
 
 .site-header {
-
     position: sticky;
     top: 0;
     z-index: 999;
 
+    width: 100%;
+
     background-color: var(--color-white);
-    padding: 20px 0;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #eeeeee;
 }
 
 
-/* ==============================
+/* ==================================================
    NAVBAR LAYOUT
-================================= */
+================================================== */
 
 .site-header .container {
     display: flex;
+
     align-items: center;
     justify-content: space-between;
+
+    gap: 30px;
 }
 
 
-/* ==============================
+/* ==================================================
    LOGO
-================================= */
+================================================== */
 
 .logo {
-    color: var(--color-dark);
-    font-size: 24px;
-    font-weight: 700;
+    display: flex;
+
+    align-items: center;
+
+    flex-shrink: 0;
+
     text-decoration: none;
 }
 
 
-/* ==============================
+.logo img {
+    display: block;
+
+    width: 150px;
+    height: auto;
+}
+
+
+/* ==================================================
    NAVIGATION
-================================= */
+================================================== */
+
+.main-nav {
+    margin: auto;
+}
+
 
 .nav-list {
     display: flex;
-    gap: 30px;
+
+    align-items: center;
+
+    gap: 35px;
 
     list-style: none;
 }
 
+
 .nav-list a {
+    display: inline-block;
+
+    position: relative;
+
+    padding: 5px 0;
+
     color: var(--color-dark);
+
+    font-size: 15px;
+    font-weight: 700;
+
     text-decoration: none;
-    font-size: 16px;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
 }
+
 
 .nav-list a:hover {
     color: var(--color-primary);
+
+    transform: translateY(-2px);
 }
 
 
-/* ==============================
+/* Small underline effect */
+
+.nav-list a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background-color: var(--color-primary);
+
+    transition: width 0.3s ease;
+}
+
+
+.nav-list a:hover::after {
+    width: 100%;
+}
+
+
+/* ==================================================
    RESERVATION BUTTON
-================================= */
+================================================== */
 
 .reservation-button {
+    flex-shrink: 0;
+
     padding: 12px 20px;
 
     background-color: var(--color-primary);
     color: var(--color-white);
 
-    text-decoration: none;
     border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
+
 .reservation-button:hover {
-    opacity: 0.9;
+    background-color: #9f4d2f;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
+
+
 
 /* ==============================
    HERO SECTION
@@ -391,6 +487,12 @@ body {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
+.menu-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
 
 /* ==============================
    MENU CARD IMAGE
@@ -401,6 +503,13 @@ body {
     height: 230px;
 
     object-fit: cover;
+
+    transition: transform 0.4s ease;
+
+}
+
+.menu-card:hover img {
+    transform: scale(1.06);
 }
 
 
@@ -648,16 +757,21 @@ body {
 
     .site-header .container {
         flex-wrap: wrap;
-        gap: 20px;
     }
 
     .main-nav {
         order: 3;
         width: 100%;
+        margin-left: 0;
     }
 
     .nav-list {
         justify-content: center;
+        gap: 25px;
+    }
+
+    section {
+    scroll-margin-top: 90px;
     }
 
 }
@@ -670,28 +784,34 @@ body {
 @media (max-width: 600px) {
 
     .site-header {
-        padding: 15px 0;
+        padding: 12px 0;
     }
 
     .site-header .container {
-        justify-content: center;
+        gap: 15px;
     }
 
-    .logo {
-        width: 100%;
+    .logo img{
+        width: 110px;
 
-        text-align: center;
     }
 
     .nav-list {
-        flex-wrap: wrap;
-        gap: 15px 20px;
+        gap: 12px 20px;
+    }
+
+    .nav-list a { 
+        font-size: 14px; 
     }
 
     .reservation-button {
-        width: 100%;
-
+        /* width: 100%; */
+        padding: 11px 18px;
         text-align: center;
+    }
+
+    section {
+    scroll-margin-top: 90px;
     }
 
 }
@@ -889,3 +1009,30 @@ body {
     }
 
 }
+
+
+
+/* ==============================
+   TRANSITIONS
+================================= */
+
+.nav-list a,
+.reservation-button,
+.hero-button,
+.about-button,
+.reservation-cta-button,
+.menu-card {
+    transition: all 0.3s ease;
+}
+
+
+.reservation-button:hover,
+.hero-button:hover,
+.about-button:hover,
+.reservation-cta-button:hover,
+.menu-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+}
+
