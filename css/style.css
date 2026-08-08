@@ -636,3 +636,256 @@ body {
 
     font-size: 14px;
 }
+
+
+
+
+/* ==============================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .site-header .container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .main-nav {
+        order: 3;
+        width: 100%;
+    }
+
+    .nav-list {
+        justify-content: center;
+    }
+
+}
+
+
+/* ==============================
+   MOBILE NAVBAR
+================================= */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        padding: 15px 0;
+    }
+
+    .site-header .container {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        gap: 15px 20px;
+    }
+
+    .reservation-button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}
+
+
+/* ======= Hero Section tablet =======================*/
+
+@media (max-width: 900px) {
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .hero-content {
+        max-width: 700px;
+
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-image img {
+        height: 400px;
+    }
+
+}
+
+
+
+/* ======== Hero Section mobile ========= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        height: 300px;
+    }
+
+}
+
+
+/* ======== About Section tablet ========= */
+
+@media (max-width: 900px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .about-content {
+        max-width: 700px;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .about-image {
+        order: 2;
+    }
+
+    .about-content {
+        order: 1;
+    }
+
+}
+
+
+/* ====== About Section mobile ========= */
+
+@media (max-width: 600px) {
+
+    .about-section {
+        padding: 50px 0;
+    }
+
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+    .about-image img {
+        height: 320px;
+    }
+
+}
+
+
+
+/* =============== Menu Section tablet  ================ */
+
+@media (max-width: 900px) {
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* =============== Menu Section mobile ================ */
+
+@media (max-width: 600px) {
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .menu-section {
+        padding: 50px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+}
+
+
+/* ========= Reservation Section mobile  ======== */
+
+@media (max-width: 600px) {
+
+    .reservation-section {
+        padding: 50px 0;
+    }
+
+    .reservation-content {
+        padding: 50px 20px;
+    }
+
+    .reservation-content h2 {
+        font-size: 34px;
+    }
+
+}
+
+
+/* ========    Footer Section tablet ========== */
+
+@media (max-width: 900px) {
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* ======== Footer Section mobile ========= */
+
+@media (max-width: 600px) {
+
+    .site-footer {
+        padding: 50px 0 20px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        text-align: center;
+    }
+
+    .footer-brand p {
+        margin: 0 auto;
+    }
+
+    .footer-column ul {
+        align-items: center;
+    }
+
+}
