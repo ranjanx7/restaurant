@@ -1,391 +1,267 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
 
-    <meta 
-        name="viewport" 
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>AloGlow Restaurant</title>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/reservation.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="site-header">
-        <div class="container">
+      <div class="container">
+        <a href="#home" class="logo">
+          <img src="images/logo.png" alt="AloGlow" />
+        </a>
 
-           <a href="#home" class="logo">
-                <img src="images/logo.png" alt="AloGlow">
-            </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li>
+              <a href="#home">Home</a>
+            </li>
 
-            <nav class="main-nav" aria-label="Main navigation">
-                <ul class="nav-list">
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
 
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
+            <li>
+              <a href="#menu">Menu</a>
+            </li>
+          </ul>
+        </nav>
 
-                    <li>
-                        <a href="#menu">Menu</a>
-                    </li>
-
-                </ul>
-            </nav>
-
-            <a href="#reservation" class="reservation-button">
-                Reserve a Table
-            </a>
-
-        </div>
+        <a href="#reservation" class="reservation-button"> Reserve a Table </a>
+      </div>
     </header>
 
-
     <main>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="hero-label">Welcome to AloGlow</p>
 
-        <!-- Hero Section -->
-        <section class="hero" id="home">
+            <h1>
+              Good Food.
+              <span>Good Mood.</span>
+            </h1>
 
-            <div class="container hero-grid">
-
-                <div class="hero-content">
-
-                    <p class="hero-label">
-                        Welcome to AloGlow
-                    </p>
-
-                    <h1>
-                        Good Food.
-                        <span>Good Mood.</span>
-                    </h1>
-
-                    <p class="hero-description">
-                        Fresh ingredients, thoughtful recipes, and
-                        unforgettable flavors made with passion.
-                    </p>
-
-                    <a href="#menu" class="hero-button">
-                        Explore Our Menu
-                    </a>
-
-                </div>
-
-
-                <div class="hero-image">
-                    <img 
-                        src="images/img-hero.jpg"
-                        alt="Freshly prepared restaurant dish"
-                    >
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- About Section -->
-<section class="about-section" id="about">
-
-    <div class="container about-grid">
-
-        <div class="about-image">
-            <img 
-                src="images/img-about.jpg"
-                alt="Interior of AloGlow restaurant"
-            >
-        </div>
-
-
-        <div class="about-content">
-
-            <p class="section-label">
-                About AloGlow
+            <p class="hero-description">
+              Fresh ingredients, thoughtful recipes, and unforgettable flavors
+              made with passion.
             </p>
 
-            <h2>
-                A place where food
-                brings people together.
-            </h2>
+            <a href="#menu" class="hero-button"> Explore Our Menu </a>
+          </div>
+
+          <div class="hero-image">
+            <img
+              src="images/img-hero.jpg"
+              alt="Freshly prepared restaurant dish"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section" id="about">
+        <div class="container about-grid">
+          <div class="about-image">
+            <img
+              src="images/img-about.jpg"
+              alt="Interior of AloGlow restaurant"
+            />
+          </div>
+
+          <div class="about-content">
+            <p class="section-label">About AloGlow</p>
+
+            <h2>A place where food brings people together.</h2>
 
             <p>
-                At AloGlow, we believe great food is more than
-                just a meal. It is about bringing people together,
-                sharing stories, and creating memorable moments.
+              At AloGlow, we believe great food is more than just a meal. It is
+              about bringing people together, sharing stories, and creating
+              memorable moments.
             </p>
 
             <p>
-                Our kitchen focuses on fresh ingredients,
-                simple techniques, and flavors that make
-                every visit special.
+              Our kitchen focuses on fresh ingredients, simple techniques, and
+              flavors that make every visit special.
             </p>
 
-            <a href="#menu" class="about-button">
-                Discover Our Story
-            </a>
-
+            <a href="#menu" class="about-button"> Discover Our Story </a>
+          </div>
         </div>
+      </section>
 
-    </div>
+      <!-- Menu Section -->
+      <section class="menu-section" id="menu">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">Our Menu</p>
 
-</section>
-
-    <!-- Menu Section -->
-<section class="menu-section" id="menu">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <p class="section-label">
-                Our Menu
-            </p>
-
-            <h2>
-                Something delicious for everyone.
-            </h2>
+            <h2>Something delicious for everyone.</h2>
 
             <p>
-                Explore some of our favorite dishes,
-                prepared fresh with quality ingredients.
+              Explore some of our favorite dishes, prepared fresh with quality
+              ingredients.
             </p>
+          </div>
 
+          <div class="menu-grid">
+            <!-- Menu Card -->
+            <article class="menu-card">
+              <img src="images/pasta.jpg" alt="Creamy pasta dish" />
+
+              <div class="menu-card-content">
+                <div class="menu-card-header">
+                  <h3>Creamy Pasta</h3>
+                  <span>Nrs. 400</span>
+                </div>
+
+                <p>
+                  Creamy pasta prepared with fresh herbs and parmesan cheese.
+                </p>
+              </div>
+            </article>
+
+            <!-- Menu Card -->
+            <article class="menu-card">
+              <img src="images/burger.jpg" alt="Fresh restaurant burger" />
+
+              <div class="menu-card-content">
+                <div class="menu-card-header">
+                  <h3>Classic Burger</h3>
+                  <span>Nrs. 315</span>
+                </div>
+
+                <p>
+                  Juicy grilled beef, fresh vegetables, and our special house
+                  sauce.
+                </p>
+              </div>
+            </article>
+
+            <!-- Menu Card -->
+            <article class="menu-card">
+              <img src="images/pizza.jpg" alt="Freshly baked pizza" />
+
+              <div class="menu-card-content">
+                <div class="menu-card-header">
+                  <h3>Garden Pizza</h3>
+                  <span>Nrs. 960</span>
+                </div>
+
+                <p>Crispy pizza topped with fresh vegetables and mozzarella.</p>
+              </div>
+            </article>
+
+            <!-- Menu Card -->
+            <article class="menu-card">
+              <img src="images/salad.jpg" alt="Fresh healthy salad" />
+
+              <div class="menu-card-content">
+                <div class="menu-card-header">
+                  <h3>Fresh Salad</h3>
+                  <span>Nrs. 300</span>
+                </div>
+
+                <p>Fresh seasonal vegetables with our homemade dressing.</p>
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
 
+      <!-- Reservation CTA -->
+      <section class="reservation-section" id="reservation">
+        <div class="container">
+          <div class="reservation-content">
+            <p class="section-label">Make a Reservation</p>
 
-        <div class="menu-grid">
-
-            <!-- Menu Card -->
-            <article class="menu-card">
-
-                <img
-                    src="images/pasta.jpg"
-                    alt="Creamy pasta dish"
-                >
-
-                <div class="menu-card-content">
-
-                    <div class="menu-card-header">
-                        <h3>Creamy Pasta</h3>
-                        <span>Nrs. 400</span>
-                    </div>
-
-                    <p>
-                        Creamy pasta prepared with fresh
-                        herbs and parmesan cheese.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- Menu Card -->
-            <article class="menu-card">
-
-                <img
-                    src="images/burger.jpg"
-                    alt="Fresh restaurant burger"
-                >
-
-                <div class="menu-card-content">
-
-                    <div class="menu-card-header">
-                        <h3>Classic Burger</h3>
-                        <span>Nrs. 315</span>
-                    </div>
-
-                    <p>
-                        Juicy grilled beef, fresh vegetables,
-                        and our special house sauce.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- Menu Card -->
-            <article class="menu-card">
-
-                <img
-                    src="images/pizza.jpg"
-                    alt="Freshly baked pizza"
-                >
-
-                <div class="menu-card-content">
-
-                    <div class="menu-card-header">
-                        <h3>Garden Pizza</h3>
-                        <span>Nrs. 960</span>
-                    </div>
-
-                    <p>
-                        Crispy pizza topped with fresh
-                        vegetables and mozzarella.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- Menu Card -->
-            <article class="menu-card">
-
-                <img
-                    src="images/salad.jpg"
-                    alt="Fresh healthy salad"
-                >
-
-                <div class="menu-card-content">
-
-                    <div class="menu-card-header">
-                        <h3>Fresh Salad</h3>
-                        <span>Nrs. 300</span>
-                    </div>
-
-                    <p>
-                        Fresh seasonal vegetables with
-                        our homemade dressing.
-                    </p>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- Reservation CTA -->
-<section class="reservation-section" id="reservation">
-
-    <div class="container">
-
-        <div class="reservation-content">
-
-            <p class="section-label">
-                Make a Reservation
-            </p>
-
-            <h2>
-                Ready for a memorable meal?
-            </h2>
+            <h2>Ready for a memorable meal?</h2>
 
             <p>
-                Reserve your table at AloGlow and enjoy
-                delicious food, warm hospitality, and
-                a memorable dining experience.
+              Reserve your table at AloGlow and enjoy delicious food, warm
+              hospitality, and a memorable dining experience.
             </p>
 
-            <a href="#" class="reservation-cta-button">
-                Reserve a Table
-            </a>
-
+            <a href="#" class="reservation-cta-button"> Reserve a Table </a>
+          </div>
         </div>
-
-    </div>
-
-</section>
-
+      </section>
     </main>
 
     <footer class="site-footer" id="contact">
-
-    <div class="container">
-
+      <div class="container">
         <div class="footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <a href="#" class="footer-logo"> ALOGLOW </a>
 
-            <!-- Brand -->
-            <div class="footer-brand">
+            <p>Good food, warm moments, and memorable experiences.</p>
+          </div>
 
-                <a href="#" class="footer-logo">
-                    ALOGLOW
-                </a>
+          <!-- Navigation -->
+          <div class="footer-column">
+            <h3>Explore</h3>
 
-                <p>
-                    Good food, warm moments, and
-                    memorable experiences.
-                </p>
+            <ul>
+              <li>
+                <a href="#home">Home</a>
+              </li>
 
-            </div>
+              <li>
+                <a href="#about">About</a>
+              </li>
 
+              <li>
+                <a href="#menu">Menu</a>
+              </li>
 
-            <!-- Navigation -->
-            <div class="footer-column">
+              <li>
+                <a href="#reservation">Reservation</a>
+              </li>
+            </ul>
+          </div>
 
-                <h3>Explore</h3>
+          <!-- Contact -->
+          <div class="footer-column">
+            <h3>Contact</h3>
 
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
+            <ul>
+              <li>Kathmandu, Nepal</li>
+              <li>+977 9800000000</li>
+              <li>hello@alowglow.com</li>
+            </ul>
+          </div>
 
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
+          <!-- Opening Hours -->
+          <div class="footer-column">
+            <h3>Opening Hours</h3>
 
-                    <li>
-                        <a href="#menu">Menu</a>
-                    </li>
-
-                    <li>
-                        <a href="#reservation">Reservation</a>
-                    </li>
-                </ul>
-
-            </div>
-
-
-            <!-- Contact -->
-            <div class="footer-column">
-
-                <h3>Contact</h3>
-
-                <ul>
-                    <li>Kathmandu, Nepal</li>
-                    <li>+977 9800000000</li>
-                    <li>hello@alowglow.com</li>
-                </ul>
-
-            </div>
-
-
-            <!-- Opening Hours -->
-            <div class="footer-column">
-
-                <h3>Opening Hours</h3>
-
-                <ul>
-                    <li>Sunday - Friday</li>
-                    <li>10:00 AM - 8:00 PM</li>
-                    <li>Saturday</li>
-                    <li>9:00 AM - 9:00 PM</li>
-                </ul>
-
-            </div>
-
+            <ul>
+              <li>Sunday - Friday</li>
+              <li>10:00 AM - 8:00 PM</li>
+              <li>Saturday</li>
+              <li>9:00 AM - 9:00 PM</li>
+            </ul>
+          </div>
         </div>
-
 
         <div class="footer-bottom">
-
-            <p>
-                © 2026 AloGlow. All rights reserved.
-            </p>
-
+          <p>© 2026 AloGlow. All rights reserved.</p>
         </div>
-
-    </div>
-
-</footer>
-
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
