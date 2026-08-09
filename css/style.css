@@ -1,49 +1,43 @@
-
 /* ============  CSS VARIABLES  ===================== */
 
 :root {
-    --color-primary: #b85c38;
-    --color-dark: #1f1f1f;
-    --color-light: #fffaf5;
-    --color-white: #ffffff;
-    --font-main: Arial, sans-serif;
-    --container-width: 1200px;
-    --radius-medium: 12px;
+  --color-primary: #b85c38;
+  --color-dark: #1f1f1f;
+  --color-light: #fffaf5;
+  --color-white: #ffffff;
+  --font-main: Arial, sans-serif;
+  --container-width: 1200px;
+  --radius-medium: 12px;
 }
-
 
 /* ========== BASIC RESET ====================== */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-
 
 body {
-    font-family: var(--font-main);
-    color: var(--color-dark);
-    background-color: var(--color-light);
+  font-family: var(--font-main);
+  color: var(--color-dark);
+  background-color: var(--color-light);
 }
-
 
 /* ==============  COMMON CONTAINER  ======================== */
 
 .container {
-    width: min(90%, var(--container-width));
-    margin: 0 auto;
+  width: min(90%, var(--container-width));
+  margin: 0 auto;
 }
 
 section {
-    scroll-margin-top: 30px;
+  scroll-margin-top: 30px;
 }
-
 
 /* ======== TRANSITIONS for navbar links and different buttons ====================== */
 
@@ -53,17 +47,14 @@ section {
 .about-button,
 .reservation-cta-button,
 .menu-card {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-
 
 .reservation-button:hover,
 .hero-button:hover,
 .about-button:hover,
 .reservation-cta-button:hover,
 .menu-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
-
